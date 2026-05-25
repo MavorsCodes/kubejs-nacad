@@ -1,0 +1,12 @@
+{
+    "author": "MavorsCodes",
+    "description": "Makes it so you can do energising recipes with the Create: Stuff & Additions Tesla and charging recipes with the Create: New Age Energisers",
+    "versions": [
+        11
+    ],
+    "modloaders": [
+        "forge"
+    ],
+    "dependencies": [],
+    "incompatibilities": []
+}
