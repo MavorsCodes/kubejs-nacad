@@ -63,7 +63,7 @@ function mapType(event,sourceType,inputMap){
  */
 function canConvert(recipe,inputMap){
 let inputString = normalize(recipe.json.get('ingredients').toString());
-  if (inputMap.has(inputString)) {
+  if (inputMap && inputMap.has(inputString)) {
     return false; 
   }
   
