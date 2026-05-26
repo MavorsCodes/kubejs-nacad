@@ -123,7 +123,7 @@ function energisingToCharging(event, recipe, inputMap, doConversionCheck) {
     type: global.recipeTypes['charging'],
     energy: recipeJson.get('energy_needed').getAsInt(),
     ingredients: recipeJson.get('ingredients'),
-    max_charge_rate: 360,
+    max_charge_rate: 360,//this is here because the new age recipes don't have a max charge rate, i might make it configurable if it's needed
     results: recipeJson.get('results')
   });
 }
