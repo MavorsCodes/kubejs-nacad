@@ -7,6 +7,10 @@
     "modloaders": [
         "forge"
     ],
-    "dependencies": [],
+    "dependencies": [
+    "mod:create",
+    "mod:create_new_age",
+    "mod:createaddition"
+    ],
     "incompatibilities": []
 }
