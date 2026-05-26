@@ -20,6 +20,6 @@ ServerEvents.recipes(event => {
 });
 ```
 ---
-- **Let duplicate and confliting recipe through:** change the `doConversionCheck` flag in the _chargingToEnergising()_ and _energisingToCharging()_ functions calls to _false_.
-- **Add just some recipes:** to add just 1 or more recipes manually you *DON'T* have to do mapType() only if you don't care about conflicts/duplicates, call the function like this _chargingToEnergising(event, someRecipeObject, null, false);_
+- **Let duplicate and confliting recipe through:** change the `doConversionCheck` flag in the ```chargingToEnergising()``` and ```energisingToCharging()``` functions calls to ```false```.
+- **Add just some recipes:** to add just 1 or more recipes manually you *DON'T* have to do ```mapType(event,someRecipeObject,map)``` only if you don't care about conflicts/duplicates, call the function like this ```chargingToEnergising(event, someRecipeObject, null, false);```
 ---
