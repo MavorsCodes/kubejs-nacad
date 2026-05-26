@@ -24,11 +24,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-const RecipeTypes = {
-  'charging': 'createaddition:charging',
-  'energising': 'create_new_age:energising',
-  'deploying': 'create:deploying'
-};
 
 // Helper Normalize JSON 
 function normalize(jsonArrayString) {
@@ -99,7 +94,7 @@ function chargingToEnergising (event, recipe,inputMap,doConversionCheck){
   let outputs = recipeJson.get('results');
 
   event.custom({
-    type: recipeType['energising'],
+    type: global.recipeTypes['energising'],
     energy_needed: energy,
     ingredients: inputs,
     results: outputs
@@ -125,7 +120,7 @@ function energisingToCharging(event, recipe, inputMap, doConversionCheck) {
 
   let recipeJson = recipe.json;
   event.custom({
-    type: recipeType['charging'],
+    type: global.recipeTypes['charging'],
     energy: recipeJson.get('energy_needed').getAsInt(),
     ingredients: recipeJson.get('ingredients'),
     max_charge_rate: 360,
